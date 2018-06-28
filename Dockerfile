@@ -60,6 +60,7 @@ RUN rm /opt/nginx/conf/nginx.conf
 ADD nginx.conf /opt/nginx/conf/nginx.conf
 RUN mkdir -p /usr/share/nginx/html/
 ADD index.html /usr/share/nginx/html/index.html
+ADD keywords-logo.png /usr/share/nginx/html/keywords-logo.png
 ADD start.sh /
 
 EXPOSE 1935
